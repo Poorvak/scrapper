@@ -14,7 +14,7 @@ def worker(index):
     a = soup.find(id='comic')
     b = a.find_all("img")
     print "http:"+b[0]['src']
-    wget.download("http:"+b[0]['src'],"/Users/poorvakkapoor/GitHub/new_dir/scrapper/images")
+    wget.download("http:"+b[0]['src'],"/../../../../../images")
     print "number of files downloaded", index
 
 def threads():
